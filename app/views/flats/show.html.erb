@@ -1,0 +1,11 @@
+<ul>
+  <h2>Details</h2>
+  <li><%= @flat.name %></li>
+  <li><%= @flat.address %></li>
+  <li><%= @flat.description%></li>
+  <li><%= @flat.price_per_night %></li>
+  <li><%= @flat.number_of_guests %></li>
+</ul>
+
+<%= link_to "Delete", flat_path(flat), method: :delete %>
+<%= link_to "Edit", edit_flat_path %>
